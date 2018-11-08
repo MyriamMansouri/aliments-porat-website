@@ -16,6 +16,13 @@ $(document).ready(function(){
     });
 }); 
 
+$(document).ready(function(){
+  var d = new Date();
+  var element = document.getElementById("footer-company-name");
+  var node = document.createTextNode(d.getFullYear() + ' ');
+  element.insertBefore(node,element.childNodes[1]);
+});
+
 
 
 function myFunction() {
