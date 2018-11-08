@@ -1,0 +1,92 @@
+article {
+  padding:10vw 10vw;
+}
+main {margin-bottom:10vh;}
+
+.titre{
+    background-image: url(../images/place-640.jpg);
+	background-position: bottom; 
+}
+#map {
+  height: 90vw;
+  width:80vw;
+  margin-top:35px;
+  background-color:transparent;
+}
+
+#description {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  background-color: #fff;
+}
+
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#inputBox{
+  border:solid #999 1px;
+  border-radius:2px;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.10);
+  width: 85vw;
+  max-width: 700px;
+  min-width: 270px;
+  }
+  
+#inputBox:focus-within {
+    outline:  auto 3px;
+}
+
+#pac-input {
+	outline:  none;
+	background-color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	text-overflow: ellipsis;
+	width: 60vw;
+	max-width:650px;
+	min-width:240px;
+	border:none;
+}
+.fa-search{
+  margin:10px;
+
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+#target {
+  width: 345px;
+}

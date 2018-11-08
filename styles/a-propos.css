@@ -1,0 +1,95 @@
+article {
+	width: 50vw;
+	padding:10vw;
+
+}
+section{	
+	text-align: center;
+}
+
+	
+h2,.separateur {
+	margin:0px auto 50px;
+	text-align: center;
+
+}
+
+.separateur {
+	background-image:url("../images/Jalapeno-burned.png");
+	height: 180px;
+	background-size: 100px;
+	}
+
+.titre{
+    background-image: url(../images/sparkle-640.jpg);
+	background-position: right center;
+}
+#photo-notre-histoire{
+	padding-top: 0;
+}
+#photo-notre-histoire div{
+	height: 470px;
+	width: 33%;
+	margin-right: -3px;
+	margin-top: -5px;
+	display: inline-block;
+	background-size: cover;
+
+}
+
+#photo-notre-histoire #avi{
+	width: 99%;
+	display: block;
+
+}
+
+
+
+#ram{
+	background-image: url(../images/ram.jpg);
+	background-position:  top right;
+	background-repeat: no-repeat;
+
+}
+#slice{
+	background-image: url(../images/slice-640.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+#ella{
+	background-image: url(../images/ella.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+
+}
+
+#avi{
+	background-image: url(../images/avi.jpg);
+	background-position:  center;
+	background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:650px){
+article {
+	flex-flow:  column ;
+	height: inherit;
+}
+section{
+	width:auto
+}
+#photo-notre-histoire{
+	padding-left: 0;
+	padding-right: 0;
+}
+#photo-notre-histoire div, #avi{
+	width:100%;
+	}
+
+#photo-notre-histoire {
+	padding:0;
+	}
+
+}
+

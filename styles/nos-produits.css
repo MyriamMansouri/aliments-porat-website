@@ -1,0 +1,106 @@
+main article section{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:space-between;
+	}
+
+article {
+	padding:10vw 10vw 0;
+}
+
+a {
+	color:#ff3d00;
+}
+
+a:hover {
+	font-weight: bold
+}
+
+#liste {
+	margin-bottom: 30px;
+}
+	
+.titre{
+    background-image: url(../images/burger.jpg);
+	background-position: left center;
+}
+.certifications p{
+	font-size: 0.9em;
+}
+
+h3{
+	width:100vw;
+	border-top:1px solid rgba(15, 0, 0, 0.20);
+	padding-top:40px;
+	}
+
+main h4{
+	margin:0 auto;
+	font-size:0.92em;
+	font-family: 'Lato',Arial,Helvetica,cursive,serif;
+}
+	
+.item {
+	width:180px;
+	text-align: center;
+	margin:10px 0;
+	background-color:#fff;
+}
+	
+main .bouton-deroulant {
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.30);
+	background-color:#0A2A1B;
+	margin-top:  15px ;
+	color:white;
+	padding: 5px 10px;
+	min-width:80%;
+	
+	}
+main .bouton-deroulant a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+	}
+main .bouton-deroulant i, main .bouton-deroulant h4{
+	display:inline-block;}
+	
+main .bouton-deroulant i {
+	float:right;
+	font-size:1.2em;
+	color:white;
+
+	}
+main .bouton-deroulant h4 {
+	float:left;
+}
+
+main div p, .fa.fa-angle-double-up,.visible .fa.fa-angle-double-down{
+	display:none;
+	}
+
+.visible .fa.fa-angle-double-up{
+	display:inline-block;
+	}
+
+main .detail-item.visible p{
+	display:inline-block;
+	margin: 0;
+	font-size: 0.78em;
+	}
+	
+
+@media screen and (max-width:650px){
+.item {
+	margin: auto ;
+	margin-bottom:15px;
+}
+
+
+#liste{
+	max-width: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+}
+

@@ -1,0 +1,186 @@
+main article{
+	width:100vw;
+	display:flex;
+	flex-flow: row;
+	}
+	
+main article p {
+	display:block;
+	margin :auto; 
+}
+
+main .background-photo{
+	background-position:center;
+	color:#fff;
+	background-image:url("../images/pizza-cajourella.jpg");
+}
+
+main article.background-photo p{
+	margin: 15px 0;
+	max-width:530px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+main article#nos-produits{
+	padding:70px 10vw;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+}
+
+main article#nos-produits h2 {
+	font-weight:900
+}
+
+main article#nos-produits h2,main article#nos-produits p{
+	text-align:center; 
+	max-width:none;
+}
+
+#nos-produits .fas{
+	display: inherit;
+	text-align:right;
+	color:#ff3d00;
+	padding-top: 5px;
+
+}
+
+#nos-produits h4{
+	color:black;
+}
+
+
+
+main article#nos-produits a{
+	text-decoration:none;
+}
+
+.accueil-item {
+	width:195px;
+	min-height:290px;
+	padding: 8px;
+	}
+
+#burgers,#vege-cretons,#vege-vegepates,#fromages{
+    width: 90%;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin:auto;
+	}
+	
+#nos-produits #burgers{
+	background-image:url("../images/burger-original-350.jpg");}
+
+#nos-produits #vege-cretons{
+background-image:url("../images/vege-creton-350.jpg");}
+
+#nos-produits #vege-vegepates{
+background-image:url("../images/vege-pate-pesto-350.jpg");}
+
+#nos-produits #fromages{
+background-image:url("../images/cajourella-350.jpg");}
+
+.valeurs {
+	padding:70px 10vw;
+}
+
+
+.photo-text{
+	max-width:600px;
+	padding:75px 0 50px 70px;
+}
+
+.photo-text p{
+	margin-bottom: 30px;
+	font-size: 0.95em;
+}
+
+.photo-text a{
+	text-decoration: underline;
+}
+
+.photo-text p a:hover {
+	font-weight: bold;
+}
+
+#feastingonsalad{
+	margin:70px 10vw;
+	width: 100%;
+	height: 500px;
+	padding: 0;
+	background-image: url("../images/feastingonsalad-640.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+
+#wrap{
+	height:350px;
+	width: 300px;
+	background-image: url("../images/wrap-640.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+#red{
+	margin: 387px 0 0 -170px;
+	height:200px;
+	width: 300px;
+	background-image: url("../images/red-640.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	position: relative;
+	float: right;
+}
+
+#family{
+	height:400px;
+	width: 580px;
+	background-image: url("../images/family-640.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#nos-produits a>*:hover{
+	text-decoration:none;
+	}
+
+
+.separateur {
+	background-image:url("../images/sunflower-burned.png");
+	}
+
+
+
+
+@media screen and (max-width:650px){
+main article {
+	max-width:none;
+	flex-flow: row wrap;
+	}
+
+#feastingonsalad{
+	margin-left:0;
+}
+.photo-text {
+	padding-left: 0;
+}
+
+#red{
+	margin: 0;
+}
+
+#family{
+	margin-right: -35px;
+}
+
+
+}

@@ -1,0 +1,39 @@
+main .titre{
+    background-image: url(../images/cooking.jpg);
+	background-position: right center;
+}
+
+.recettes-item{
+	width:330px;
+	min-height: 470px;
+	 overflow: hidden;
+	}
+
+.separateur {
+	background-image:url("../images/toast-burned.png");
+	height: 100px;
+	background-size: 100px;
+	}
+
+
+article {
+	padding:10vw 10vw 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+h4{text-align: center;padding: 0 10px;}
+
+.recettes-item img{
+	height:250px;
+	z-index: -1;
+}
+
+main a{
+	text-decoration: none;
+}
+
+.separateur{
+	margin:50px 0;
+}

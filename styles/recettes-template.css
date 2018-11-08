@@ -1,0 +1,75 @@
+article{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:flex-start;
+	padding:10vw;
+}
+a {
+	color:#ff3d00;
+}
+
+a:hover {
+	font-weight: bold
+}
+
+ul,ol {
+	padding:0;
+	margin-left:23px;
+}
+
+
+
+.details-recette li::before{
+	content:"";
+}
+
+
+li{
+	font-size: 0.95em
+}
+
+
+h3{
+	border-bottom:1px solid rgba(15, 0, 0, 0.20);
+
+}
+
+.details-recette{
+	margin-bottom: 30px;
+}
+
+
+.fa-facebook-square:hover,.fa-pinterest-square:hover,.fa-twitter-square:hover,.fa-envelope-square:hover{
+	color:#ff7539;
+}
+.hero-recette, .details-recette{
+	width:100%;
+}
+
+.ingredients-recette {
+	width:35%;
+	padding-right: 30px
+}
+
+
+.preparation-recette {
+	width:60%;
+}
+
+.preparation-recette h3 {
+	margin-bottom: 2px;
+}
+
+@media screen and (max-width:650px){
+
+.ingredients-recette,.preparation-recette {
+	width:100%;
+	padding-right: 0
+}
+
+.details-recette li{
+	padding-right:0;
+}
+
+
+	}

@@ -1,0 +1,50 @@
+article {
+	padding:10vw 10vw;
+	background-color: white;
+}
+
+
+section{
+	padding:0 20px;
+	margin-bottom: 60px;
+}
+
+	
+h2{
+	margin-bottom: 0;
+}
+
+
+main .titre{
+    background-image: url(../images/cabbage.jpg);
+	background-position: right center;
+}
+	
+.fa-at, .fa-phone, .fa-facebook-square{
+	padding-right: 12px;
+}
+.fa-facebook-square{
+	font-size: 1.4em;
+}
+
+main a:hover{
+	font-weight: bold;
+}
+
+@media screen and (max-width:650px){
+article {
+	flex-flow:  column ;
+	height: inherit;
+}
+section{
+	width: 80vw;
+	padding:0;
+}
+
+#fabrique{
+	width: 80vw;
+	flex-grow:1;
+}
+
+}
+
