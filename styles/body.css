@@ -142,7 +142,6 @@ p, li{
 .background-photo, .titre {
 	padding: 10vw 10vw;
 	text-shadow: 0 0 13px rgba(0,0,0,.9);
-	min-height:30vh;
 	background-size:cover;
 	width: 100vw;
 	color: #fff;
@@ -163,7 +162,7 @@ h1 {
 
 
 .nous-trouver-eof {
-	background-color: #efede9;
+	background-color: #dfdfdf;
 	display: flex;
 	flex-flow: row  wrap;
 	justify-content: space-around;

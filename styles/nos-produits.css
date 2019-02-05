@@ -1,7 +1,7 @@
 main article section{
 	display:flex;
 	flex-flow: row wrap;
-	justify-content:space-between;
+	justify-content:space-around;
 	}
 
 article {
@@ -47,6 +47,7 @@ main h4{
 	background-color:#fff;
 }
 	
+
 main .bouton-deroulant {
 	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.30);
 	background-color:#0A2A1B;
