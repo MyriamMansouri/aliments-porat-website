@@ -1,5 +1,22 @@
 menu.addEventListener("click",myFunction);
 exitmenu.addEventListener("click",myFunction);
+window.addEventListener('DOMContentLoaded', init);
+
+var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1jtFS19HOLnByvz0mRWXuyoPaX6oafrs37iM6Q4mBLUE/pubhtml';
+
+function init() {
+					Tabletop.init( { key: publicSpreadsheetUrl,
+									 callback: showInfo,
+									 simpleSheet: true } )
+};
+
+
+function showInfo(data, tabletop) {
+          console.log('Successfully processed!');
+          initAutocomplete(data)
+};
+
+
 
 
 $(document).ready(function(){
@@ -53,26 +70,57 @@ function myBoutonDeroulant(clicked_id) {
 
 
 // access google maps API
+function initAutocomplete(data) {
 
-function initAutocomplete() {
-		var map = new google.maps.Map(document.getElementById('map'), {
+    //init map
+		map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 45.53, lng: -73.62},
           zoom: 8,
           mapTypeId: 'roadmap'
         });
 
- 
-var layer = new google.maps.FusionTablesLayer({
-          query: {
-            select: '\'Geocodable address\'',
-            from: '1VXd0HSKpxyjjwu2yOWBwZlrnfTxvGQXE5q65z76q'
-          },
-		  options: {
-        styleId: 2,
-        templateId: 2
-      }
+  var adressList = data;
+
+  // console.log(adressList);
+  markers = [];
+  
+  for (i = 0; i < adressList.length; i++) {
+    createMarker(i);
+  };
+
+  function createMarker(i) {
+        var lat = parseFloat(adressList[i]["Latitude"]);
+        var lng = parseFloat(adressList[i]["Longitude"]);
+        var newLatLng = new google.maps.LatLng(lat, lng);
+
+        var InfoWindow = new google.maps.InfoWindow(
+            { content: '<b>'+adressList[i]["NOM"]+'</b><br>'+adressList[i]["ADRESSE"]+'<br>'+adressList[i]["VILLE"],
+              size: new google.maps.Size(100,50)
+            });
+
+        var marker = new google.maps.Marker({
+            position: newLatLng,
+            map: map, 
+            title:adressList[i]["NOM"]
+        }); 
+
+        markers.push(marker);
+
+        google.maps.event.addListener(map, 'click', function() {
+          if (InfoWindow) {
+            InfoWindow.close();
+          }
         });
-layer.setMap(map);
+        
+        google.maps.event.addListener(marker, 'click', function() {
+          if (InfoWindow) {
+            InfoWindow.close();
+          }
+          InfoWindow.open(map,marker);
+      }); 
+
+
+  };
 
   // Create the search box and link it to the UI element.
   var input = document.getElementById('pac-input');

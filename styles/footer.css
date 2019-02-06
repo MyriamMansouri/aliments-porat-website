@@ -60,6 +60,9 @@ footer h1{
 	line-height: 42px;
 }
 
+#designed-by{
+	padding: 0 5px;
+}
 
 @media screen and (max-width:650px){
 footer{

@@ -18,6 +18,7 @@ a:hover {
 
 #liste {
 	margin-bottom: 30px;
+	display: block;
 }
 	
 .titre{
