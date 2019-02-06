@@ -4,9 +4,12 @@ The website is a showcase that displays their products, where you can find them,
 Technology behind the scene involves Html, css and the use of google maps javascript API.
 
 the website can be found in two places:
+<br>
 https://alimentsporat.herokuapp.com/
 <br>
 http://www.alimentsporat.com
+
+<strong>note:</strong> index.php and .json files where created just to be able to send the website to heroku for testing. They are not useful per say to display the website.
 
 <strong>THE MAP</strong><br>
 The website displays a map where clients can find the closest store which sells Porat products. 
