@@ -3,7 +3,7 @@ Website designed and coded with love by myself for Aliments Porat, a cool compan
 The website is a showcase that displays their products, where you can find them, some recipes and Porat vision as a company.
 Technology behind the scene involves Html, css and the use of google maps javascript API.
 
-the website can be found in two places:
+the website can be found here:
 http://www.alimentsporat.com
 
 <strong>note:</strong> index.php and .json files where created just to be able to send the website to heroku for testing. They are not useful per say to display the website.
