@@ -22,7 +22,7 @@ a:hover {
 }
 	
 .titre{
-    background-image: url(../images/burger.jpg);
+    background-image: url(../images/spreads-basket-1024.jpg);
 	background-position: left center;
 }
 .certifications p{
@@ -46,6 +46,12 @@ main h4{
 	text-align: center;
 	margin:10px 0;
 	background-color:#fff;
+	
+}
+
+.item img {
+	border-radius:100%;
+	border: solid #fff2f2 2px;
 }
 	
 

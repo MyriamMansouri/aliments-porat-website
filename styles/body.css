@@ -128,10 +128,13 @@ main {
 
 	}	
 
-main article {
+main article{
 	width:100vw;
 	box-sizing:border-box;
 }
+
+main article p{
+	width:100%;}
 
 
 
@@ -141,7 +144,7 @@ p, li{
 	
 .background-photo, .titre {
 	padding: 10vw 10vw;
-	text-shadow: 0 0 13px rgba(0,0,0,.9);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 	background-size:cover;
 	width: 100vw;
 	color: #fff;
@@ -162,7 +165,7 @@ h1 {
 
 
 .nous-trouver-eof {
-	background-color: #dfdfdf;
+	background-color: #f8f6f6;
 	display: flex;
 	flex-flow: row  wrap;
 	justify-content: space-around;
@@ -191,14 +194,14 @@ h1 {
 
 }
 
-#tartinades{
-	background-image: url("../images/feastingonsalad-640.jpg");
+#burger{
+	background-image: url("../images/burger-640.jpg");
 }
 #grilled{
 	background-image: url("../images/grilled-640.jpg");
 }
 
-#grilled,#tartinades{
+#grilled,#burger{
 	margin:0;
 	height:400px;
 	width:50%;
@@ -296,7 +299,7 @@ h1 {
 
 @media screen and (max-width:650px){
 
-#grilled,#tartinades,.nous-trouver-eof section{
+#grilled,#burger,.nous-trouver-eof section{
 	width:100%;
 }
 
