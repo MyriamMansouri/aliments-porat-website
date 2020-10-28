@@ -96,7 +96,8 @@ main article#nos-produits a {
 }
 
 .photo-text {
-  padding: 75px 0 50px 70px;
+  padding: 75px 0 0px 70px;
+  width: 100%;
 }
 
 .photo-text p {
@@ -112,36 +113,39 @@ main article#nos-produits a {
   font-weight: bold;
 }
 
+
+
 #wrap {
   margin: 70px 10vw;
   width: 100%;
   height: 500px;
   padding: 0;
-  background-image: url("../images/wrap-640.jpg");
+  background-image: url("../images/wrap-1024.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
 
 #burger-hero {
-  height: 350px;
-  width: 300px;
-  background-image: url("../images/burger-640.jpg");
+  height: 450px;
+  width: 600px;
+  background-image: url("../images/burger2-640.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 #plat {
-  margin: 387px 0 0 -170px;
-  height: 200px;
-  width: 300px;
+  margin: 387px 0 0 -300px;
+  height: 300px;
+  width: 600px;
   background-image: url("../images/plat-640.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: contain;
   position: relative;
   float: right;
+  flex-grow: 3;
 }
 
 #family {
