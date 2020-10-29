@@ -22,7 +22,7 @@ a:hover {
 }
 	
 .titre{
-    background-image: url(../images/spreads-basket-1024.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url('../images/spreads-basket-1600.jpg');
 	background-position: left center;
 }
 .certifications p{
