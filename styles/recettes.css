@@ -1,5 +1,5 @@
 main .titre{
-    background-image: url(../images/cooking.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)), url(../images/panier-1600.jpg);
 	background-position: right center;
 }
 

@@ -1,95 +1,90 @@
 article {
-	width: 50vw;
-	padding:10vw;
-
-}
-section{	
-	text-align: center;
+    width: 50vw;
+    padding: 10vw;
 }
 
-	
-h2,.separateur {
-	margin:0px auto 50px;
-	text-align: center;
+h2,
+.separateur {
+    margin: 0px auto 50px;
+    text-align: center;
+}
 
+section {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+section p {
+    line-height: 35px;
+    margin: 0
 }
 
 .separateur {
-	background-image:url("../images/Jalapeno-burned.png");
-	height: 120px;
-	background-size: 100px;
+    background-image: url("../images/Jalapeno-burned.png");
+    height: 120px;
+    background-size: 100px;
+}
+
+.titre {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
+        url(../images/wrap-1600.jpg);
+    background-position: center center;
+}
+
+#notre-histoire {
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-gap: 3rem;
+}
+
+#notre-histoire img, .pictures img{
+    width: 300px
+}
+
+.pictures {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	margin: 0 auto;
+    max-width: 1000px;
+}
+
+.pictures img {
+    margin-top: 6rem;
+}
+
+.odd-p {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.even-p {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+
+
+@media screen and (max-width: 950px) {
+    #notre-histoire, .pictures {
+        display: flex;
+        flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+        text-align: center;
+    }
+	.pictures img {
+		margin-top: 4rem;
 	}
+	
+    section p {
+        line-height: 30px;
+    }
 
-.titre{
-    background-image: url(../images/sparkle-640.jpg);
-	background-position: right center;
-}
-#photo-notre-histoire{
-	padding-top: 0;
-}
-#photo-notre-histoire div{
-	height: 470px;
-	width: 33%;
-	margin-right: -3px;
-	margin-top: -5px;
-	display: inline-block;
-	background-size: cover;
+    article {
+        flex-flow: column;
+        height: inherit;
+    }
 
-}
-
-#photo-notre-histoire #avi{
-	width: 99%;
-	display: block;
-
-}
-
-
-
-#ram{
-	background-image: url(../images/ram.jpg);
-	background-position:  top right;
-	background-repeat: no-repeat;
-
-}
-#slice{
-	background-image: url(../images/slice-640.jpg);
-	background-position: top;
-	background-repeat: no-repeat;
-}
-
-#ella{
-	background-image: url(../images/ella.jpg);
-	background-position: top right;
-	background-repeat: no-repeat;
-
-}
-
-#avi{
-	background-image: url(../images/avi.jpg);
-	background-position:  center;
-	background-repeat: no-repeat;
-
-}
-
-@media screen and (max-width:650px){
-article {
-	flex-flow:  column ;
-	height: inherit;
-}
-section{
-	width:auto
-}
-#photo-notre-histoire{
-	padding-left: 0;
-	padding-right: 0;
-}
-#photo-notre-histoire div, #avi{
-	width:100%;
-	}
-
-#photo-notre-histoire {
-	padding:0;
-	}
-
-}
-
+    section {
+        width: auto;
+    }

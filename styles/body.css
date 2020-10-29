@@ -125,7 +125,7 @@ ul {
   margin: 0;
 }
 h1 {
-  font-size: 50px;
+  font-size: 4rem;
   line-height: 55px;
 }
 h1,
@@ -183,6 +183,7 @@ li {
   width: 100vw;
   color: #fff;
   font-size: 1.3em;
+  box-sizing: border-box;
 }
 
 
