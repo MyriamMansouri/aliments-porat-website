@@ -115,21 +115,21 @@ main article#nos-produits a {
 
 
 
-#wrap {
+#hero-2 {
   margin: 70px 10vw;
   width: 100%;
   height: 500px;
   padding: 0;
-  background-image: url("../images/wrap-1024.jpg");
+  background-image: url("../images/hero-2-1024.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
 }
 
-#burger-hero {
+#hero-3 {
   height: 450px;
   width: 600px;
-  background-image: url("../images/burger2-640.jpg");
+  background-image: url("../images/tartines-640.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -171,7 +171,7 @@ main article#nos-produits a {
     flex-flow: row wrap;
   }
 
-  #wrap {
+  #hero-2 {
     margin-left: 0;
   }
   .photo-text {
