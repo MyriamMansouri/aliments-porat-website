@@ -12,7 +12,7 @@ main article p {
 main .background-photo {
   background-position: center;
   color: #fff;
-  background-image: url("../images/hero-1024.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../images/sandwich-1600.jpg");
 }
 
 main article.background-photo p {
@@ -136,13 +136,13 @@ main article#nos-produits a {
 }
 
 #plat {
-  margin: 387px 0 0 -300px;
+  margin: 487px 0 0 -300px;
   height: 300px;
   width: 600px;
-  background-image: url("../images/plat-640.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1)), url("../images/plat-640.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   float: right;
   flex-grow: 3;
