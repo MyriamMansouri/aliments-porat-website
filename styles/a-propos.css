@@ -1,6 +1,6 @@
 article {
     width: 50vw;
-    padding: 10vw;
+    padding: 8vw 10vw;
 }
 
 h2,
@@ -26,8 +26,8 @@ section p {
 }
 
 .titre {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)),
-        url(../images/wrap-1600.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)),
+        url(../images/plat-1600.jpg);
     background-position: center center;
 }
 

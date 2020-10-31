@@ -125,8 +125,7 @@ ul {
   margin: 0;
 }
 h1 {
-  font-size: 4rem;
-  line-height: 55px;
+  font-size: 3.3rem;
 }
 h1,
 h2,
@@ -175,25 +174,37 @@ li {
   line-height: 1.5em;
 }
 
+.background-photo {
+  font-size: 1.2em;
+  padding: 10vw 10vw;
+}
+
+.background-photo h1{
+  font-size: 3.7em;
+}
+
+
 .background-photo,
 .titre {
-  padding: 10vw 10vw;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   background-size: cover;
   width: 100vw;
   color: #fff;
-  font-size: 1.3em;
   box-sizing: border-box;
+
+}
+.titre {
+  padding: 9vw 10vw;
 }
 
-
 .titre h1 {
-  padding: 60px 20px;
+  padding: 50px 20px;
   border: solid white;
-}
-
-.titre h1 {
   text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nous-trouver-eof {
@@ -329,6 +340,18 @@ li {
 }
 
 @media screen and (max-width: 650px) {
+
+  .background-photo {
+    font-size: 1.1em;
+  }
+  h1, .background-photo h1{
+    font-size: 2.7rem;
+  }
+  .titre h1 {
+    padding: 40px 20px;
+    min-height: 100px;
+  }
+
   #fair,
   #burger,
   .nous-trouver-eof section {
