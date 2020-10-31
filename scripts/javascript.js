@@ -7,13 +7,14 @@ var publicSpreadsheetUrl =
 
 function init() {
   Papa.parse(publicSpreadsheetUrl, {
-  download: true,
-  header: true,
-  complete: showInfo
-})
+    download: true,
+    header: true,
+    complete: showInfo,
+  });
+}
 
 function showInfo(results) {
-  var data = results.data
+  var data = results.data;
   initAutocomplete(data);
 }
 
