@@ -15,6 +15,7 @@ function init() {
 
 function showInfo(results) {
   var data = results.data;
+  console.log(data)
   initAutocomplete(data);
 }
 
