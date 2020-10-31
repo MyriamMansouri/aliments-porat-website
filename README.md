@@ -10,4 +10,4 @@ http://www.alimentsporat.com
 
 <strong>THE MAP</strong><br>
 The website displays a map where clients can find the closest store which sells Porat products. 
-As I wanted it to be easily updated by people from Aliments Porat, I created a file in google sheets with the store adresses and coordinates they can edit when needed. The data from the file is gathered and sent to the website by Tabletop.js.
+As I wanted it to be easily updated by people from Aliments Porat, I created a file in google sheets with the store adresses and coordinates they can edit when needed. The data from the file is gathered and sent to the website by Papaparse.js.
