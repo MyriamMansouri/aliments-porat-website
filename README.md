@@ -6,7 +6,7 @@ Technology behind the scene involves Html, css and the use of google maps javasc
 the website can be found here:
 http://www.alimentsporat.com
 
-<strong>note:</strong> index.php and .json files where created just to be able to send the website to heroku for testing. They are not useful per say to display the website.
+<strong>note:</strong> index.php and .json files were created just to be able to send the website to heroku for testing. They are not useful per say to display the website.
 
 <strong>THE MAP</strong><br>
 The website displays a map where clients can find the closest store which sells Porat products. 
