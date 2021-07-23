@@ -340,13 +340,14 @@ li {
 }
 
 @media screen and (max-width: 650px) {
-
   .background-photo {
     font-size: 1.1em;
   }
+
   h1, .background-photo h1{
     font-size: 2.7rem;
   }
+
   .titre h1 {
     padding: 40px 20px;
     min-height: 100px;
