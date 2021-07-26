@@ -62,7 +62,8 @@ main article#nos-produits a {
 #burgers,
 #vege-cretons,
 #vege-vegepates,
-#fromages {
+#fromages,
+#cheeses {
   width: 90%;
   height: 150px;
   background-size: contain;
