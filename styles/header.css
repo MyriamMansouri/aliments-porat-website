@@ -33,15 +33,24 @@ header a {
 header a #localisation {
 	color: #ff3d00;
 	border:1px solid #ff3d00;
-	padding:3px 10px;
-	display:inline-block;
+	padding: 5px 12px;
+	display: flex;
+	align-items: center;
 	font-weight:bold;
 	margin-right: 19px;
 }
 
 header a #localisation i {
 	margin-right: 7px;
-	font-size: 1.1em;
+	font-size: 1.4em;
+}
+
+header span {
+	margin: 0 3px;
+}
+
+header .locations__text--mobile {
+	display: none;
 }
 
 header #language,header #language a  {
@@ -140,8 +149,8 @@ header  .fa:hover, header .active:hover {
 	header a #localisation {
 		position: absolute;
 		right: 65px;
-		top: 39px;
-		display: block;
+		top: 37px;
+		display: flex;
 		padding: 4px 10px ;
 		font-size: 0.85em;
 		margin-right: 0;
@@ -172,6 +181,7 @@ header  .fa:hover, header .active:hover {
 
 	header .locations__text--mobile {
 		display: inline;
+		margin-left: 3px;
 	}
 
 	header nav.responsive .detail:hover,
