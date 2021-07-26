@@ -105,11 +105,12 @@ main article#nos-produits a {
 }
 
 .photo-text a {
+  font-weight: bold;
   text-decoration: underline;
 }
 
-.photo-text p a:hover {
-  font-weight: bold;
+.photo-text a:hover {
+  color: #ff3d00;
 }
 
 
@@ -164,7 +165,7 @@ main article#nos-produits a {
   background-image: url("../images/sunflower-burned.png");
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 737px) {
   main article {
     max-width: none;
     flex-flow: row wrap;

@@ -60,7 +60,7 @@ h3{
 	margin-bottom: 2px;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:737px){
 
 .ingredients-recette,.preparation-recette {
 	width:100%;

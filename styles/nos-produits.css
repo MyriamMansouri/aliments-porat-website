@@ -8,7 +8,7 @@ article {
 	padding:10vw 10vw 0;
 }
 
-a {
+main a {
 	color:#ff3d00;
 }
 
@@ -97,7 +97,7 @@ main .detail-item.visible p{
 	}
 	
 
-@media screen and (max-width:650px){
+@media screen and (max-width: 737px){
 .item {
 	margin: auto ;
 	margin-bottom:15px;

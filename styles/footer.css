@@ -64,7 +64,7 @@ footer h1{
 	padding: 0 5px;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:737px){
 footer{
 	display:block;
 	padding:40px ;}

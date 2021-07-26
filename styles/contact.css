@@ -31,7 +31,7 @@ main a:hover{
 	font-weight: bold;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:737px){
 article {
 	flex-flow:  column ;
 	height: inherit;
