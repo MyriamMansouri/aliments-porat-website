@@ -94,7 +94,7 @@ ul li::before {
   color: #ff3d00;
 
   font-size: 0.95em;
-  top: 0em;
+  top: 0;
   width: 1.5em;
 }
 

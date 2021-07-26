@@ -118,7 +118,7 @@ header  .fa:hover, header .active:hover {
 	#menu,nav.responsive #exitmenu {
 		position: absolute;
 		right:12px;
-		top: 35px;
+		top: 30px;
 		display:block;
 		padding:5px 10px ;
 		margin:0;
@@ -140,7 +140,7 @@ header  .fa:hover, header .active:hover {
 	header a #localisation {
 		position: absolute;
 		right: 65px;
-		top: 43px;
+		top: 39px;
 		display: block;
 		padding: 4px 10px ;
 		font-size: 0.85em;
