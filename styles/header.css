@@ -20,7 +20,7 @@ header {
 
 header #logo,header #logo img{
 	height:inherit;
-	}
+}
 
 header a img{
 	margin-left:25px;
@@ -40,7 +40,8 @@ header a #localisation {
 }
 
 header a #localisation i {
-	margin-right:7px
+	margin-right: 7px;
+	font-size: 1.1em;
 }
 
 header #language,header #language a  {
@@ -105,6 +106,8 @@ header  .fa:hover, header .active:hover {
 @media screen and (max-width:737px) {
 	header{
 		display: block;
+		height: 55px;
+		padding: 10px 0 15px;
 	}
 
 	header nav a{
@@ -115,7 +118,7 @@ header  .fa:hover, header .active:hover {
 	#menu,nav.responsive #exitmenu {
 		position: absolute;
 		right:12px;
-		top:40px;
+		top: 35px;
 		display:block;
 		padding:5px 10px ;
 		margin:0;
@@ -136,11 +139,11 @@ header  .fa:hover, header .active:hover {
 
 	header a #localisation {
 		position: absolute;
-		right:70px;
-		top:48px;
-		display:block;
-		padding:4px 10px ;
-		font-size: 1em;
+		right: 65px;
+		top: 43px;
+		display: block;
+		padding: 4px 10px ;
+		font-size: 0.85em;
 		margin-right: 0;
 	}	
 	
@@ -164,7 +167,11 @@ header  .fa:hover, header .active:hover {
 	}
 
 	header span{
-		display:none;
+		display: none;
+	}
+
+	header .locations__text--mobile {
+		display: inline;
 	}
 
 	header nav.responsive .detail:hover,
@@ -186,5 +193,9 @@ header  .fa:hover, header .active:hover {
 
 	header nav .language-container__mobile a {
 		text-transform: capitalize;
+	}
+
+	header a img {
+		margin-left: 17px;
 	}
 }
