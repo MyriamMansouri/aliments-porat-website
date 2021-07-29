@@ -1,8 +1,9 @@
 article {
-  padding: 10vw 10vw;
+  padding: 70px 10vw;
 }
-main {
-  margin-bottom: 10vh;
+
+p {
+  margin-top: 0;
 }
 
 .titre {
@@ -10,11 +11,10 @@ main {
   background-position: center;
 }
 
-#map {
-  height: 90vw;
-  width: 80vw;
-  margin-top: 35px;
-  background-color: transparent;
+.map-container {
+  height: 75vh;
+  width: 100vw;
+  background-color:#DCDCDC;
 }
 
 #description {
