@@ -28,7 +28,7 @@ main .titre{
 }
 
 main a:hover{
-	font-weight: bold;
+	color: #ff3d00;
 }
 
 @media screen and (max-width:737px){
