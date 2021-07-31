@@ -17,7 +17,9 @@ ul,ol {
 	margin-left:23px;
 }
 
-
+.info-recette {
+	width: 100%;
+}
 
 .details-recette li::before{
 	content:"";
