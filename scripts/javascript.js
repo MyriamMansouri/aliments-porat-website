@@ -1,5 +1,5 @@
-menu.addEventListener("click",myFunction);
-exitmenu.addEventListener("click",myFunction);
+menu.addEventListener("click", toggleOnClick);
+exitmenu.addEventListener("click", toggleOnClick);
 window.addEventListener('DOMContentLoaded', init);
 
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1jtFS19HOLnByvz0mRWXuyoPaX6oafrs37iM6Q4mBLUE/pubhtml';
@@ -23,11 +23,13 @@ $(document).ready(function(){
     $(document).mouseup(function(e){
        var nav = $('.nav');
        var detail = $('.detail');
+       var logo = $('img');
        if (!nav.is(e.target) // The target of the click isn't the container.
+       && !logo.is(e.target) // The target of the click isn't the logo image.
        && nav.has(e.target).length === 0
        && detail.css('display') === 'block') // Nor a child element of the container
        {
-          myFunction();
+          toggleOnClick();
        }
 
     });
@@ -42,7 +44,7 @@ $(document).ready(function(){
 
 
 
-function myFunction() {
+function toggleOnClick() {
     var x = document.getElementById("myTopnav");
     if (x.className === "nav") {
         x.className += " responsive";
