@@ -2,17 +2,26 @@ menu.addEventListener("click", openOnClick);
 exitmenu.addEventListener("click", closeOnClick);
 window.addEventListener('DOMContentLoaded', init);
 
-var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1jtFS19HOLnByvz0mRWXuyoPaX6oafrs37iM6Q4mBLUE/pubhtml';
+window.googleDocCallback = function () { return true; };
+var publicSpreadsheetUrl = 'https://sheets.googleapis.com/v4/spreadsheets/1jtFS19HOLnByvz0mRWXuyoPaX6oafrs37iM6Q4mBLUE/values/Sheet1?key=AIzaSyBK8CrkKosfBqBeQuy0SW2gcd-jZRIHxGE';
 
 function init() {
-					Tabletop.init( { key: publicSpreadsheetUrl,
-									 callback: showInfo,
-									 simpleSheet: true } )
+  fetch(publicSpreadsheetUrl)
+  .then(res => {
+    console.log(res)
+    return Papa.parse(
+    result.values,
+    {
+      header: true,
+      complete: showInfo,
+    }
+  )})
 };
 
-function showInfo(data, tabletop) {
-          console.log('Successfully processed!');
-          initAutocomplete(data)
+function showInfo(results) {
+  const data = results.data
+  console.log(results)
+  initAutocomplete(data)
 };
 
 $(document).ready(function(){
@@ -76,7 +85,7 @@ function initAutocomplete(data) {
 
   var adressList = data;
 
-  // console.log(adressList);
+  console.log(adressList);
   markers = [];
   
   for (i = 0; i < adressList.length; i++) {
