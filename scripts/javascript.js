@@ -2,26 +2,14 @@ menu.addEventListener("click", openOnClick);
 exitmenu.addEventListener("click", closeOnClick);
 window.addEventListener('DOMContentLoaded', init);
 
-window.googleDocCallback = function () { return true; };
-var publicSpreadsheetUrl = 'https://sheets.googleapis.com/v4/spreadsheets/1jtFS19HOLnByvz0mRWXuyoPaX6oafrs37iM6Q4mBLUE/values/Sheet1?key=AIzaSyBK8CrkKosfBqBeQuy0SW2gcd-jZRIHxGE';
+const publicSpreadsheetUrl = 'https://sheets.googleapis.com/v4/spreadsheets/1mdBYi9kPLC3FmvmQeHBsNX_tERlMxEXVt77RoDw1llA/values/Sheet1?key=AIzaSyCGxsCpKqE7y0M6j4GlE4VHhjDnLYUUIrw';
 
 function init() {
-  fetch(publicSpreadsheetUrl)
-  .then(res => {
-    console.log(res)
-    return Papa.parse(
-    result.values,
-    {
-      header: true,
-      complete: showInfo,
-    }
-  )})
-};
-
-function showInfo(results) {
-  const data = results.data
-  console.log(results)
-  initAutocomplete(data)
+  return fetch(publicSpreadsheetUrl)
+  .then(res => res.json()).then(data => {
+    Papa.parse(Papa.unparse(data.values), {header: true, complete: initAutocomplete})
+})
+  .catch(err => console.log('Error in init function: ', err))
 };
 
 $(document).ready(function(){
@@ -76,6 +64,11 @@ function myBoutonDeroulant(clicked_id) {
 // access google maps API
 function initAutocomplete(data) {
 
+    if (!data) {
+      const error = new Error('Error: No data was retrieved');
+      throw error;
+    }
+
     //init map
 		map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 45.53, lng: -73.62},
@@ -85,7 +78,7 @@ function initAutocomplete(data) {
 
   var adressList = data;
 
-  console.log(adressList);
+  // console.log(adressList);
   markers = [];
   
   for (i = 0; i < adressList.length; i++) {
