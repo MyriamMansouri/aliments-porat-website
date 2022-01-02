@@ -64,11 +64,6 @@ function myBoutonDeroulant(clicked_id) {
 // access google maps API
 function initAutocomplete(data) {
 
-    if (!data) {
-      const error = new Error('Error: No data was retrieved');
-      throw error;
-    }
-
     //init map
 		map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 45.53, lng: -73.62},
@@ -76,7 +71,7 @@ function initAutocomplete(data) {
           mapTypeId: 'roadmap'
         });
 
-  var adressList = data;
+  var adressList = data.data;
 
   // console.log(adressList);
   markers = [];
